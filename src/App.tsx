@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Customer from "./components/Customer";
 
 function App() {
   return (
@@ -16,9 +17,13 @@ function App() {
             </button>
           </div>
         </div>
+        <div className='row'>
+          <div className='col'>
+            <Customer name={'Ron'} age={33} title={'dev'} />
+          </div>
+        </div>
       </div>
-    </React.Fragment>
-
+    </React.Fragment >
   );
 }
 

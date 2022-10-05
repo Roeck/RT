@@ -1,13 +1,13 @@
 import React from 'react';
 
-interface IProps{
-    name : string;
-    age : number;
-    title : string;
+interface IProps {
+    name: string;
+    age: number;
+    title: string;
 }
 
-let Customer:React.FC<IProps> = ({name , age , title}) => {
-    return(
+let Customer: React.FC<IProps> = ({ name, age, title }) => {
+    return (
         <React.Fragment>
             <h2>Customer Component</h2>
             <ul className="list-group">
@@ -24,4 +24,5 @@ let Customer:React.FC<IProps> = ({name , age , title}) => {
         </React.Fragment>
     )
 };
+
 export default Customer;
